@@ -45,7 +45,7 @@ $(document).ready(function() {
     humidity.text(responseToday.humidity + '%');
     uvIndex.text(responseToday.uvIndex);
     pressure.text(responseToday.pressure + 'hPa');
-    imageWeather.attr('src', `assets/images/${responseToday.icon}.png`);
+    imageWeather.attr('src', `assets/img/${responseToday.icon}.png`);
     
     $('#btn-prediction-week').on('click', () => {
       window.location.href = 'views/prediction.html';
