@@ -13,22 +13,25 @@
 <body>
   <!--nav-->
   <header>
-    <nav class=" navbar-inverse  principal">
+    <nav class=" navbar-inverse principal navbar-container navbar-fixed-top">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button> -->
-          <a class="navbar-brand" href="../index.html">Weather</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand link-logo" href="#">
+            <h4 class="text-white-header">Weather</h4>
+          </a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="#">Link</a></li> -->
+            <li class="text-white-header">
+              <a href="../index.html">Regresar</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -36,25 +39,21 @@
   </header>
   <section class="imagen">
     <div class="container" id="container-days">
-      <div class="row ">
-        <div class="col-xs-3">
-          <p class="text-center text-white">PRONÓSTICO</p>
-        </div>
-        <div class="col-xs-3">
-          <p class="text-center text-white">DIA</p>
-        </div>
-        <div class="col-xs-3">
-          <p class="text-center text-white">TEMP. MÁX.</p>
-        </div>
-        <div class="col-xs-3">
-          <p class="text-center text-white">TEMP. MIN.</p>
-        </div>
+      <div class="col-xs-3">
+        <p class="text-center text-white">PRONÓSTICO</p>
       </div>
-    </div>
-    <div class="row ">
-      <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <div class="col-xs-3">
+        <p class="text-center text-white">DIA</p>
+      </div>
+      <div class="col-xs-3">
+        <p class="text-center text-white">TEMP. MÁX.</p>
+      </div>
+      <div class="col-xs-3">
+        <p class="text-center text-white">TEMP. MIN.</p>
+      </div>
+      <!-- <div class="col-xs-12 col-md-6">
         <button id="back" class="btn btn-default btn-lg btn-block " type="submit">Regresar</button>
-      </div>
+      </div> -->
     </div>
   </section>
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>

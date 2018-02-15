@@ -1,22 +1,40 @@
-body{
-  font-family: 'Patua One', cursive;
+/* Glonal */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
 }
+
+body{
+  height: 100%;
+  z-index: -1;
+  font-family: 'Patua One', cursive;
+  color: white;
+  background-color: gray;
+}
+
+.container-week-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for View Splash */
+
 .margin{
   margin: 0px;
 }
+
 .icon{
   display: flex;
   flex-direction: row;
 
 }
-.icon i{
 
+.icon i{
   font-size: 10rem;
 }
+
 .splash {
   width: 100%;
   height: 100%;
@@ -34,25 +52,8 @@ img[alt="gif" ]{
   width: 20vw;
   height: 20vh;
 }
-.line{
-  outline: 1px solid red;
-}
 
-body{
-  background-image: url(../assets/img/paisaje.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.imagen:before{
-  content: "";
-  width: 100%;
-  height: 100vh;
-  background-color: #413226;
-  position:absolute;
-  opacity: 0.5;
-}
+/* Style for Index */
 
 .text-white{
   color:white;
@@ -63,16 +64,18 @@ button{
   padding: 5rem;
 }
 
+/* Style for View Prediction */
+
 .container-flex-row {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-flex-column {
   display: flex;
-	flex-direction:column;
+  flex-direction:column;
   justify-content: center;
-	padding: 2em;
+  padding: 2em;
 }
 
 #img-principal{
@@ -86,6 +89,15 @@ button{
   margin-left: 40px;
 }
 
-#container-days{
-  padding-top: 20px;
+.container {
+  height: 100%;
+}
+
+.navbar-container text-white {
+  color: #fff;
+} 
+
+.text-white-header {
+  color: #fff;
+  margin: 0;
 }
