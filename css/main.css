@@ -37,14 +37,14 @@ img[alt="gif" ]{
 .line{
   outline: 1px solid red;
 }
-/*iamge traida del api*/
-.imagen{
+
+body{
   background-image: url(../assets/img/paisaje.jpg);
   height: 100vh;
   background-size: cover;
-  position: relative;
-
+  background-repeat: no-repeat;
 }
+
 .imagen:before{
   content: "";
   width: 100%;
@@ -78,4 +78,14 @@ button{
 #img-principal{
   width: 150px;
   height: 150px;
+}
+
+.img-days{
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+}
+
+#container-days{
+  padding-top: 20px;
 }

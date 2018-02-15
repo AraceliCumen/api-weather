@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> -->
           </button>
-          <a class="navbar-brand" href="#">Weather</a>
+          <a class="navbar-brand" href="index.html">Weather</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,36 +51,47 @@
           <img id="img-principal" src="assets/img/icon.png" alt="img-principal" class="img-responsive text-center">
         </div>
         <div class="col-xs-4">
-          <h1 class="text-center">15°C</h1>
+          <h1 class="text-center" id="temperature">15°C</h1>
         </div>
       </div>
       <div class="row ">
         <div class="col-xs-6">
           <p class="text-center text-white">Wind</p>
         </div>
-        <div class="col-xs-6" id="wind">
+        <div class="col-xs-6">
+          <p class="text-center text-white" id="wind"></p>
         </div>
+      </div>
+      <div class="row ">
         <div class="col-xs-6">
           <p class="text-center text-white">Humidity</p>
         </div>
-        <div class="col-xs-6" id="humidity">
+        <div class="col-xs-6">
+          <p class="text-center text-white" id="humidity"></p>
         </div>
+      </div>
+      <div class="row ">
         <div class="col-xs-6">
           <p class="text-center text-white">UV Index</p>
         </div>
-        <div class="col-xs-6" id="uv-index">
+        <div class="col-xs-6">
+          <p class="text-center text-white" id="uv-index"></p>
         </div>
+      </div>
+      <div class="row ">
         <div class="col-xs-6">
           <p class="text-center text-white">Pressure</p>
         </div>
-        <div class="col-xs-6" id="pressure">
-        </div>
-        <div class="row ">
-          <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <button class="btn btn-default btn-lg btn-block " type="submit">Predicción de la semana</button>
-          </div>
+        <div class="col-xs-6">
+          <p class="text-center text-white" id="pressure"></p>
         </div>
       </div>
+      <div class="row ">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <button id="btn-prediction-week" class="btn btn-default btn-lg btn-block " type="submit">Predicción de la semana</button>
+        </div>
+      </div>
+    </div>
   </section>
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
   <!--vinculando con el framework bootstrap-js-->
