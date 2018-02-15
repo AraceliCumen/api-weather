@@ -27,7 +27,7 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  background-color: #e96c67;
+  background-color:#5bc0de;
 }
 
 img[alt="gif" ]{
@@ -54,7 +54,28 @@ img[alt="gif" ]{
   opacity: 0.5;
 }
 
+.text-white{
+  color:white;
+}
+
 button{
   margin-top: 10rem;
   padding: 5rem;
+}
+
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-flex-column {
+  display: flex;
+	flex-direction:column;
+  justify-content: center;
+	padding: 2em;
+}
+
+#img-principal{
+  width: 150px;
+  height: 150px;
 }
