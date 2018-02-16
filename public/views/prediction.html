@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Api weather</title>
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
@@ -11,49 +12,54 @@
 </head>
 
 <body>
-  <!--nav-->
   <header>
-    <nav class=" navbar-inverse principal navbar-container navbar-fixed-top">
+    <nav class="navbar navbar-inverse principal">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+          <!--boton barras para la version mobile-->
+          <button type="button" class="navbar-toggle collapsed boton-hamburger" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand link-logo" href="#">
-            <h4 class="text-white-header">Weather</h4>
+          <!--imagen-->
+          <a class="navbar-brand" href="#">
+            <p>weather</p>
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--Menu despegable para desktop y mobile-->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <!--se posciona al lado derecho en desktop-->
           <ul class="nav navbar-nav navbar-right">
-            <li class="text-white-header">
-              <a href="../index.html">Regresar</a>
-            </li>
+            <li><a href="../index.html">Regresar</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <section class="imagen">
-    <div class="container" id="container-days">
-      <div class="col-xs-3">
-        <p class="text-center text-white">PRONÓSTICO</p>
+    <div class="container-fluid" id="container-days">
+      <div class="row">
+        <div class="col-xs-3">
+          <p class="text-center text-white">PRONÓSTICO</p>
+        </div>
+        <div class="col-xs-3">
+          <p class="text-center text-white">DIA</p>
+        </div>
+        <div class="col-xs-3">
+          <p class="text-center text-white">TEMP. MÁX.</p>
+        </div>
+        <div class="col-xs-3">
+          <p class="text-center text-white">TEMP. MIN.</p>
+        </div>
       </div>
-      <div class="col-xs-3">
-        <p class="text-center text-white">DIA</p>
-      </div>
-      <div class="col-xs-3">
-        <p class="text-center text-white">TEMP. MÁX.</p>
-      </div>
-      <div class="col-xs-3">
-        <p class="text-center text-white">TEMP. MIN.</p>
-      </div>
-      <!-- <div class="col-xs-12 col-md-6">
-        <button id="back" class="btn btn-default btn-lg btn-block " type="submit">Regresar</button>
-      </div> -->
+      <!--<div class="row">
+        <div class="col-xs-12 col-md-6">
+          <button id="back" class="btn btn-default btn-lg btn-block " type="submit">Regresar</button>
+        </div>
+      </div>-->
+
     </div>
   </section>
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>

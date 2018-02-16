@@ -22,38 +22,39 @@
   </div>
   <!--nav-->
   <header>
-    <nav class=" navbar-inverse principal navbar-container navbar-fixed-top">
+    <nav class="navbar navbar-inverse principal">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+          <!--boton barras para la version mobile-->
+          <button type="button" class="navbar-toggle collapsed boton-hamburger" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand link-logo" href="#">
-            <h4 class="text-white-header">Weather</h4>
+          <!--imagen-->
+          <a class="navbar-brand" href="#">
+            <p class="text-center">weather</p>
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--Menu despegable para desktop y mobile-->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <!--se posciona al lado derecho en desktop-->
           <ul class="nav navbar-nav navbar-right">
-            <li class="text-white-header">
-              <a class="text-white" href="../index.html">Regresar</a>
-            </li>
+            <li><a href="../index.html">Regresar</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <section class="imagen">
-    <div>
+    <div class="container-fluid">
       <div class="row container-flex-row">
         <div class="col-xs-4 col-xs-offset-4 container-flex-column">
           <img id="img-principal" src="assets/img/icon.png" alt="img-principal" class="img-responsive text-center">
         </div>
         <div class="col-xs-4">
-          <h1 class="text-center" id="temperature">15°C</h1>
+          <h1 class="text-center temperature" id="temperature">15°C</h1>
         </div>
       </div>
       <div class="row ">
